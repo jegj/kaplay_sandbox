@@ -4,6 +4,7 @@
 
 - [spriters-resource](https://www.spriters-resource.com/)
 - [spriters-kenney](https://kenney.nl/)
+-[itch.io](https://itch.io/)
 
 - `src` - source code for your kaplay project
 - `dist` - distribution folder, contains your index.html, built js bundle and static assets
