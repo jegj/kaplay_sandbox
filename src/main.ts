@@ -5,14 +5,19 @@ const k = kaplay({
   global: false,
 });
 k.loadRoot("./"); // A good idea for Itch.io publishing later
-k.loadBean("bean");
-k.loadSpriteAtlas('./public/sprites/kenney_pixel-line-platformer/Tilemap/tilemap_packed.png', {
-  hero: {
-    x: 16,
-    y: 16,
-    width: 160,
-    height: 96,
-  }
+// k.loadSpriteAtlas('sprites/sprites/0x72_DungeonTilesetII_v1.7/0x72_DungeonTilesetII_v1.7/atlas_floor-16x16.png', {
+//   "floor": {
+//     "x": 16,
+//     "y": 64,
+//     "width": 48,
+//     "height": 48,
+//     "sliceX": 3,
+//     "sliceY": 3,
+//   },
+// });
+k.loadSprite("floor", "sprites/sprites/0x72_DungeonTilesetII_v1.7/0x72_DungeonTilesetII_v1.7/atlas_floor-16x16.png", {
+  sliceX: 7,
+  sliceY: 7,
 });
 k.setGravity(1600);
 
@@ -72,7 +77,7 @@ k.scene("game", () => {
   // });
   //
   k.add([
-    k.sprite("hero"),
+    k.sprite("floor"),
     k.pos(k.center()),
     k.anchor("center"),
     k.area(),
@@ -82,15 +87,15 @@ k.scene("game", () => {
   // player.play("idle");
 
 
-  k.add([
-    k.rect(k.width(), 50),
-    k.area(),
-    k.outline(3),
-    k.pos(0, 650),
-    k.body({
-      isStatic: true,
-    })
-  ]);
-
+  //   k.add([
+  //     k.rect(k.width(), 50),
+  //     k.area(),
+  //     k.outline(3),
+  //     k.pos(0, 650),
+  //     k.body({
+  //       isStatic: true,
+  //     })
+  //   ]);
+  //
 });
 k.go("game");
