@@ -10,7 +10,7 @@ const JUMP_FORCE = 480;
 const SPEED = 120;
 
 k.loadRoot("./"); // A good idea for Itch.io publishing later
-k.loadSpriteAtlas("sprites/0x72_DungeonTilesetII_v1.7/0x72_DungeonTilesetII_v1.7/atlas.png", {
+k.loadSpriteAtlas("sprites/dungeon/atlas.png", {
   "princess": {
     x: 128,
     y: 4,
