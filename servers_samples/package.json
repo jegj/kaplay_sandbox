@@ -1,0 +1,17 @@
+{
+  "name": "servers_samples",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "caller": "node server_caller/index.js",
+    "reci": "node server_recipient/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}
